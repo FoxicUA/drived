@@ -28,7 +28,7 @@ body {
 	margin: 0;
 	height: 100vh;
 	width: 100vw;
-  overflow: hidden;
+  overflow: auto;
   font-family: "Manrope", Arial, sans-serif;
   /*font-size: 16px; */
 }
@@ -312,11 +312,23 @@ h3 {
   }
 
   .platform-info {
-    text-align: center;
-    padding: 30px 375px 30px 375px;
+    align-items: stretch;
+    align-content: center;
+    justify-content: center;
+    padding: 0px 375px 0px 375px;
     color: #fff;
     font-size: 24pt;
   }
+
+
+  /* section 3 */
+  
+
+  
+
+
+
+  
 
   
 
