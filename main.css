@@ -1,0 +1,324 @@
+*{
+	margin: 0;
+	padding:0;
+	border: 0;
+  box-sizing: border-box;
+  
+}
+/* fonts */
+@font-face {
+  font-family: 'Manrope';
+  src: url("../fonts/manrope-bold.woff2") format("woff2"),
+  url("../fonts/manrope-bold.woff") format("woff"),
+  url("../fonts/manrope-bold.otf") format("truetype");
+  font-style: normal;
+  font-weight: 700; }
+
+
+@font-face {
+  font-family: 'Manrope';
+  src: url("../fonts/manrope-regular.woff2") format("woff2"),
+  url("../fonts/manrope-regular.woff") format("woff"),
+  url("../fonts/manrope-regular.otf") format("truetype");
+  font-style: normal;
+  font-weight: 400; }
+
+html,
+body {
+	margin: 0;
+	height: 100vh;
+	width: 100vw;
+  overflow: hidden;
+  font-family: "Manrope", Arial, sans-serif;
+  /*font-size: 16px; */
+}
+
+/* fonts */
+/* @font-face {
+  font-family: 'Manrope';
+  src: url("../fonts/manrope-bold.woff2") format("woff2"),
+  url("../fonts/manrope-bold.woff") format("woff"),
+  url("../fonts/manrope-bold.otf") format("truetype");
+  font-style: normal;
+  font-weight: 700; }
+
+
+@font-face {
+  font-family: 'Manrope';
+  src: url("../fonts/manrope-regular.woff2") format("woff2"),
+  url("../fonts/manrope-regular.woff") format("woff"),
+  url("../fonts/manrope-regular.otf") format("truetype");
+  font-style: normal;
+  font-weight: 400; } */
+
+  .nav-wrapper {
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+    width: 90%;
+    height: 80px;
+    /* padding: 0 30px; */
+    background: #fff;
+  }
+
+  .logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .navigation {
+		display: flex;
+		/* align-items: flex-end;  */
+    font-family: "Manrope", sans-serif;
+    font-weight: normal;
+    font-size: 14pt;
+    list-style: none;
+    
+  }
+  
+  .nav-tab:not(:last-child) {
+    padding: 10px 58px;
+    margin: 0;
+  }
+  
+  .nav-tab:last-child {
+    padding: 10px 0 0 25px;
+  }
+  
+  .nav-tab,
+  .menu-btn {
+    cursor: pointer;
+  }
+  
+  li:hover {
+    text-shadow: 2px 3px 10px #5b71ec;
+    transition: all 0.3s ease;
+    border-radius: 7px;
+    text-decoration: underline;
+    
+  } 
+
+  .hidden {
+    display: none;
+  }
+
+  #check01 {
+    vertical-align: middle;
+    background: #e5e5e5;
+    
+  }
+
+/* dropdown_menu */
+
+/* .check01 {
+  border: 3px solid black;
+  background: #e5e5e5;
+}  */
+
+label{
+  position: relative;
+  display: block;
+  padding: 0 18px 0 20px;
+  line-height: 3em;
+  transition: background 0.3s;
+  cursor: pointer;
+ 
+}
+
+label:after{
+  content: "";
+  position: absolute;
+  display: block;
+  top: 50%;
+  right: 5px;
+  width: 0;
+  height: 0;
+  border-top: 4px solid rgba(255,255,255,.5);
+  border-bottom: 0 solid rgba(255,255,255,.5);
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  transition: border-bottom .1s, border-top .1s .1s;
+  }
+
+label:hover,
+input:checked ~ label{background:rgba(0,0,0,.3);}
+
+input:checked ~ label:after{
+  border-top: 0 solid rgba(255,255,255,.5);
+  border-bottom: 4px solid rgba(255,255,255,.5);
+  transition: border-top .1s, border-bottom .1s .1s;
+}
+
+/*hide the inputs*/
+input{display: none}
+
+/*show the second level menu of the selected voice*/
+input:checked ~ ul.submenu{
+  max-height:300px;
+  transition:max-height 0.3s ease-in;
+}
+
+/*style for the second level menu*/
+ul.submenu{
+  border-radius: 10px;
+  max-height: 0;
+  width: 80px; 
+  padding: 0px;
+  overflow: hidden;
+  list-style-type: none;
+  background :#7e7d7d;
+  box-shadow: 0 0 1px rgba(0,0,0,.3);
+  transition: max-height 0.3s ease-out;
+  position: absolute;
+  z-index: 20;
+  /* min-width: 50%; */
+}
+
+ul.submenu li a{
+  display: block;
+  padding: 10px;
+  color: #ddd;
+  text-decoration: none;
+  box-shadow: 0 -1px rgba(0,0,0,.3) inset;
+  transition: background .3s;
+  white-space: nowrap;
+  font-family: "Manrope", sans-serif;
+  font-weight: normal;
+}
+
+ul.submenu li a:hover{
+  background: rgba(0,0,0,.5);
+  color: #fff;
+  font-size: 1.4rem;
+  cursor: pointer;
+}
+
+main {
+  display: block;
+}
+
+/* sections blocks */
+.section {
+  padding: 50px 0;
+  position: relative;
+}
+
+.sec-1 {
+  padding-top: 40px;
+}
+
+.content-studying {
+  display: flex;
+  padding: 0 80px;
+}
+
+.content-1 {
+  display: flex;
+  width: 50%;
+  padding-right: 20px;
+  flex-wrap: wrap;
+}
+h1 {
+  display: block;
+  text-align: left;
+  font-size: 60pt;
+  font-family: "Manrope", sans-serif;
+  font-weight: bold;
+  /* font-weight: bolder; */
+}
+h3 {
+  text-align: left;
+  font-family: "Manrope", sans-serif;
+  font-weight: normal;
+  font-size: 18pt;
+}
+.content-2 {
+  display: flex;
+  justify-content: flex-end;
+  width: 50%;
+}
+
+.responsive_img {
+ 
+  width: auto;
+  height: auto;
+}
+
+
+
+.consult {
+  display: flex;
+}
+
+/* form & btn */
+
+.form__group {
+  width: 370px;
+  height: 60px;
+  padding: 6rem;
+}
+.form__input {
+  font-size: 16pt;
+  font-family: 'Manrope';
+  color: inherit;
+  padding: 1.5rem 2rem;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 250, 0.5);
+  border: 1.5px solid #b2b2b2;
+  width: 370px;
+  height: 60px;
+  display: block;
+  transition: to all .3s; 
+}
+  .form__input:focus {
+    outline: none;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+     }
+
+  .form__input:focus:invalid {
+    border-bottom: 3px solid #fc580c; 
+  }
+    
+  .blue__button {
+    font-family: 'Manrope';
+    font-weight: bold;
+    font-size: 14pt;
+    background-color: #462be2;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    /* padding: 1.5rem 4rem; */
+    display: inline-block;
+    width: 280px;
+    height: 60px;
+    border-radius: 10px;
+    transition: all .2s;
+    position: relative;
+    border: 1.5px solid grey;
+    border: none;
+    cursor: pointer; 
+  }
+
+  /* section #2 */
+  .sec-2 {
+    background-color: #23d87d;
+    max-width: 1920px;
+    height: 660px;
+  }
+
+  .platform-info {
+    text-align: center;
+    padding: 30px 375px 30px 375px;
+    color: #fff;
+    font-size: 24pt;
+  }
+
+  
+
+   
+ 
