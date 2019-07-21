@@ -397,8 +397,92 @@ h3 {
     background-color: #252f59;
     max-width: 1920px;
     height: auto;
-    color: #fff
-}
+    color: #fff;
+    padding-left: 295px;
+    padding-right:295px;
+  }
+
+  .features-sec-4 {
+    text-align: center;
+    font-size: 48pt;
+    font-weight: bold;
+    padding-top: 75px;
+    
+  }
+  .subfeatures {
+    text-align: center;
+    font-size: 18pt;
+    font-weight: bold;
+    justify-content: center;
+    line-height: 1.8;
+    padding-top: 50px;
+  }
+
+  .platform_info {
+    text-align: center;
+    font-size: 24pt;
+    font-weight: bold;
+    justify-content: space-between;
+    /* padding-top: 75px */
+  }
+
+  /* yellow horizontal lines  */
+  .sec-4-head > h3::before, .sec-4-head > h3::after {
+    content: "";
+    width: auto;
+    border: 1px solid #ff8a33;
+    display: block;
+    margin: 120px auto;
+  }
+
+
+  .left-sec-4  h3 {
+    font-family: "Manrope";
+    font-size: 24pt;
+    font-weight: bold;
+    padding-bottom: 20px;
+  }
+  
+  .list-menu {
+    font-family: "Manrope";
+    font-size: 18pt;
+    font-weight: normal;
+    list-style-type: none;
+    margin: 30px 0;
+  }
+
+  .list-sec-4 li::before {
+    content: "-";
+    display: inline;
+    position: relative;
+    left: -27px;
+  }
+
+  /* blocks position 1-2 ; 2-1*/
+
+    .child_features_1 > .left-sec-4 {
+      order: 1;
+    }
+    .child_features_1 > .right-sec-4 {
+      order: 2;
+    }
+
+    .child_features_2 > .left-sec-4 {
+      order: 2;
+    }
+    .child_features_2 > .right-sec-4 {
+      order:1
+
+    }
+
+    .child_features_1, .child_features_2 {
+      display: block;
+    }
+
+
+
+
+
 
   /* section #5 */
   .sec-5 {
@@ -504,23 +588,32 @@ h3 {
 
 /* section #8 */
 .sec-8 {
+  display: flex;
+  justify-content: center;
   background-color: #fff;
   max-width: 1920px;
   height: auto;
   padding-right: 245px;
   padding-left: 295px;
+  
+
 }
 
 .consult_sec-8 {
+  display: flex;
+  justify-content: center;
   width: 560px;
   height: 590px;
   border-radius: 12px;
   background-color: #23d87d;
   color: #fff;
+  
 }
 
 .sec-8-container {
   flex-basis: 1170px;
+  
+
 }
 .sec-8-container > h2 {
   text-align: center;
@@ -531,7 +624,7 @@ h3 {
 }
 
 .form__in {
-  font-size: 24pt;
+  font-size: 18pt;
   font-weight: bold;
   font-family: 'Manrope';
   /* color: #fff; */
@@ -557,7 +650,7 @@ h3 {
   font-size: 24px;
   font-weight: bold;
   font-family: 'Manrope';
-  color: inherit;
+  /* color: inherit; */
   padding: 1.5rem 2rem;
   border-radius: 10px;
   background-color: #23d87d;
@@ -571,7 +664,14 @@ h3 {
   font-size: 24px;
   font-weight: bold;
   font-family: 'Manrope';
-  background-color: #23d87d;
+  background-color: transparent;
+}
+.sec8-placeholder {
+  background-color: transparent;
+  color: #fff;
+  font-size: 24px;
+  font-weight: bold;
+  font-family: 'Manrope';
 }
 
 .blue__btn {
@@ -595,7 +695,7 @@ h3 {
 
 .blue__btn:hover {
   /* border-radius: 10rem; */
-  background-color: #4754fd;
+  background-color: #0986da;
   transition: all .5;
   position: relative;
   cursor: pointer;
@@ -603,6 +703,15 @@ h3 {
   color:#fff;
   border: 1.5px solid #462be2;
 
+}
+
+.form_sec-8 {
+  padding: 15px 0;
+  display: block;
+}
+
+.form__group1, .form__group2, .form__group3, .form__group4 {
+ margin-top: 25px;
 }
   
 
