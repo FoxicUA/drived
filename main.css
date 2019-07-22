@@ -412,7 +412,7 @@ h3 {
   .subfeatures {
     text-align: center;
     font-size: 18pt;
-    font-weight: bold;
+    font-weight: normal;
     justify-content: center;
     line-height: 1.8;
     padding-top: 50px;
@@ -465,18 +465,31 @@ h3 {
     }
     .child_features_1 > .right-sec-4 {
       order: 2;
+      width: 50%;
     }
 
     .child_features_2 > .left-sec-4 {
       order: 2;
+      width: 50%;
+      
     }
     .child_features_2 > .right-sec-4 {
-      order:1
-
+      order: 1;
+      
     }
 
     .child_features_1, .child_features_2 {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .left-sec-4, .right-sec-4 {
       display: block;
+      
+    }
+    .right-sec-4 {
+      /* width: 50%; */
     }
 
 
@@ -701,7 +714,9 @@ h3 {
   cursor: pointer;
   border: none;
   color:#fff;
-  border: 1.5px solid #462be2;
+  /* border: 1.5px solid #462be2; */
+  border: 1.2px solid #fff;
+
 
 }
 
