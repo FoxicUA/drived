@@ -59,7 +59,7 @@ body {
 		/* align-items: flex-end;  */
     font-family: "Manrope", sans-serif;
     font-weight: normal;
-    font-size: 14pt;
+    font-size: 14px;
     list-style: none;
     
   }
@@ -177,7 +177,7 @@ ul.submenu li a{
 ul.submenu li a:hover{
   background: rgba(0,0,0,.5);
   color: #fff;
-  font-size: 1.4rem;
+  font-size: 1.1rem;
   cursor: pointer;
 }
 
@@ -220,7 +220,7 @@ h3 {
   text-align: left;
   font-family: "Manrope", sans-serif;
   font-weight: normal;
-  font-size: 18pt;
+  font-size: 18px;
 }
 .content-2 {
   display: flex;
@@ -257,7 +257,7 @@ h3 {
 }
 
 .form__input {
-  font-size: 16pt;
+  font-size: 16px;
   font-family: 'Manrope';
   color: inherit;
   padding: 1.5rem 2rem;
@@ -350,7 +350,7 @@ h3 {
   }
   .forwhom {
     text-align: center;
-    font-size: 48pt;
+    font-size: 48px;
     display: block;
     /* padding-top: 140px; */
   }
@@ -380,14 +380,14 @@ h3 {
   }
   .flex-item > h3 {
     font-family: "Manrope";
-    font-size: 24pt;
+    font-size: 24px;
     font-weight: bold;
     padding-top: 50px;
   }
 
   .flex-item > p {
     font-family: "Manrope";
-    font-size: 16pt;
+    font-size: 16px;
     padding-top: 45px;
     
   }
@@ -404,14 +404,14 @@ h3 {
 
   .features-sec-4 {
     text-align: center;
-    font-size: 48pt;
+    font-size: 48px;
     font-weight: bold;
     padding-top: 75px;
     
   }
   .subfeatures {
     text-align: center;
-    font-size: 18pt;
+    font-size: 18px;
     font-weight: normal;
     justify-content: center;
     line-height: 1.8;
@@ -420,7 +420,7 @@ h3 {
 
   .platform_info {
     text-align: center;
-    font-size: 24pt;
+    font-size: 24px;
     font-weight: bold;
     justify-content: space-between;
     /* padding-top: 75px */
@@ -438,14 +438,14 @@ h3 {
 
   .left-sec-4  h3 {
     font-family: "Manrope";
-    font-size: 24pt;
+    font-size: 24px;
     font-weight: bold;
     padding-bottom: 20px;
   }
   
   .list-menu {
     font-family: "Manrope";
-    font-size: 18pt;
+    font-size: 18px;
     font-weight: normal;
     list-style-type: none;
     margin: 30px 0;
@@ -579,7 +579,7 @@ h3 {
   }
   .sec-7-container > h2 {
     text-align: center;
-    font-size: 48pt;
+    font-size: 48px;
     font-weight: bold;
     color: black;
     padding-top: 135px;
@@ -630,14 +630,14 @@ h3 {
 }
 .sec-8-container > h2 {
   text-align: center;
-  font-size: 48pt;
+  font-size: 48px;
   font-weight: bold;
   color: black;
   padding-top: 135px;
 }
 
 .form__in {
-  font-size: 18pt;
+  font-size: 18px;
   font-weight: bold;
   font-family: 'Manrope';
   /* color: #fff; */
