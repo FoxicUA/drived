@@ -736,8 +736,7 @@ h3 {
   display: flex;
   justify-content: space-between;
   background-color: #fff;
-  /* width: 1160px; */
-  
+    
   padding-right: 245px;
   padding-left: 295px;
   font-family: "Manrope";
@@ -764,6 +763,11 @@ h3 {
   display: flex;
   justify-content: flex-end;
   list-style: none;
+  
+}
+
+.handy, .atmail, .telegram {
+  padding-left: 50px;
 }
 
 /* .footer_container {
