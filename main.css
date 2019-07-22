@@ -545,8 +545,9 @@ h3 {
     }
 
     .childbox1_sec-6 h2 {
-      font-size: 48px;
+      font-size: 24px;
       font-weight: bold;
+      padding-bottom: 40px;
     }
 
     .childbox1_sec-6 {
@@ -728,7 +729,65 @@ h3 {
 .form__group1, .form__group2, .form__group3, .form__group4 {
  margin-top: 25px;
 }
+
+/* footer */
+
+.footer_container {
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;
+  /* width: 1160px; */
   
+  padding-right: 245px;
+  padding-left: 295px;
+  font-family: "Manrope";
+  font-size: 16px;
+  font-weight: normal;
+  height: 140px;
+  align-items: center;
+  
+}
+.footer_navigation > li:hover {
+  text-shadow: 2px 3px 10px #5b71ec;
+  transition: all 0.3s ease;
+  border-radius: 7px;
+  
+} 
+
+.footer_nav-container {
+  display: flex;
+  
+}
+
+
+.footer_navigation {
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+}
+
+/* .footer_container {
+  content: "";
+  border-top: 1px solid #8b907a;
+  display: block;
+  
+} */
+
+
+.piolink, .atmail {
+color: #462be2;
+
+  font-family: "Manrope";
+  font-size: 16px;
+  font-weight: normal;
+}
+.telegram {
+color: #359fdd;
+font-family: "Manrope";
+  font-size: 16px;
+  font-weight: normal;
+}
+
 
   
 
